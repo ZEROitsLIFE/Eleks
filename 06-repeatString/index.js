@@ -16,7 +16,8 @@ export const repeatString = (str = '') => {
 
         for(let j = 0; j<i; j++) {temp+=str[i].toLowerCase();}
 
-        if(i!==str.length-1) {temp+='-';}
+        if(i!==str.length-1)
+         {temp+='-';}
     }
     return temp;
 }
