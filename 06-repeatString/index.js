@@ -4,16 +4,19 @@
  * @returns {string} - returns the new string
  */
 export const repeatString = (str = '') => {
-    if(str==='') {return '';}
+    if(str==='') 
+    {
+        return '';
+    }
 
-    let answer = str[0].toUpperCase()+'-';
+    let temp = str[0].toUpperCase()+'-';
     for(let i = 1; i<str.length; i++)
     {
-        answer+=str[i].toUpperCase();
+        temp+=str[i].toUpperCase();
 
-        for(let j = 0; j<i; j++) {answer+=str[i].toLowerCase();}
+        for(let j = 0; j<i; j++) {temp+=str[i].toLowerCase();}
 
-        if(i!==str.length-1) {answer+='-';}
+        if(i!==str.length-1) {temp+='-';}
     }
-    return answer;
+    return temp;
 }
